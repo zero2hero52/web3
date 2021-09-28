@@ -1,0 +1,29 @@
+.item1 {
+  grid-area: h;
+  border:3px solid gray;
+}
+.item2 {
+  grid-area: menu;
+  width:100%;
+  border:3px solid #45c8e3;
+}
+.item3 {
+  grid-area: right;
+  width:100%;
+  border:3px solid #d0eb4b;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'h menu right';
+  grid-gap: 0px;
+  background-color: #2196F3;
+  padding:0px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
