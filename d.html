@@ -2,40 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="style_01.css">
+    <title>한번해보자</title>
   </head>
   <body>
-<h1>Conditional statements</h1>
-<h2>program</h2>
-<script>
-document.write("1<br>");
-document.write("2<br>");
-document.write("3<br>");
-document.write("4<br>");
-</script>
-<h2>IF-true</h2>
-    <script>
-    document.write("1<br>");
-    if(true){
-    document.write("2<br>");
+    <h1>G쉴드 핸드가드 커스텀 오더 시스템</h1>
+<div class="grid_layout">
+    <div class="item1">javascript</div>
+    <div class="item2">
+      <div class="mu">
+      <div>요기 배경색을 변경</div>
+      <div>잘할수 있을꺼야</div>
+      <div>화이팅</div>
+      </div>
+  </div>
+    <div class="item3">
+<input id="go" type="button" value="GO" onclick="
+    if(document.querySelector('#go').value === 'GO'){
+    document.querySelector('.mu').style.backgroundColor = '#65980b';
+    document.querySelector('.mu').style.color = 'white';
+    document.querySelector('#go').value = 'stop';
     }
     else{
-    document.write("3<br>");
+    document.querySelector('.mu').style.backgroundColor = '#980b82';
+    document.querySelector('.mu').style.color = 'white';
+    document.querySelector('#go').value = 'GO';
     }
-    document.write("4<br>");
-    </script>
+">
 
-<h2>IF-false</h2>
-    <script>
-    document.write("1<br>");
-    if(false){
-    document.write("2<br>");
-    }
-    else{
-    document.write("3<br>");
-    }
-    document.write("4<br>");
-    </script>
-
+    </div>
+</div>
   </body>
 </html>
